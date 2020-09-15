@@ -31,5 +31,3 @@ num=$((num+1))
 echo $num >> $file	# append num to file
 	
 rm $lock		# remove lock file
-cat integer.txt
-exit 0
