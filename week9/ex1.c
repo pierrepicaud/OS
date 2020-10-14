@@ -2,6 +2,26 @@
 #include <stdlib.h>
 #include <errno.h>
 
+/*
+	$ ./ex1 10
+	Hits	12
+	Misses	988
+	Hits:Misses	94632677479664
+
+	$./ex1 50
+	Hits	36
+	Misses	964
+	Hits:Misses	94637671593520
+
+
+	
+	$./ex 100
+	Hits	36
+	Misses	964
+	Hits:Misses	94628174006208
+
+*/
+
 struct frame {
 	unsigned int age;	// 32 bits
 	int page_number;
