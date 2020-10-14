@@ -3,7 +3,7 @@
 #include <errno.h>
 
 struct frame {
-	unsigned char age;	// 8 bits
+	unsigned int age;	// 32 bits
 	int page_number;
 }*frames;
 
@@ -71,14 +71,14 @@ void update_frames(int next_page) {
 	for (long i = 0; i < n_frames; ++i) {
 		if (frames[i].page_number == next_page) {
 			// Hit
-			frames[i].age = frames[i].age | (1 << 7);
+			frames[i].age = frames[i].age | (1 << 31);
 			hit++;
 			return;
 		}
 	}
 	// Miss
 	miss++;
-	frames[min_index].age = 1 << 7;
+	frames[min_index].age = 1 << 31;
 	frames[min_index].page_number = next_page;
 }
 
