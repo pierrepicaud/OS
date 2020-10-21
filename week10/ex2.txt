@@ -1,0 +1,6 @@
+find ~ -inum 655808
+/home/erklarungsnot/Documents/OS/week1/file.txt
+/home/erklarungsnot/Documents/OS/week10/_ex2.txt
+
+find ~/Documents/ -inum 655808 -exec rm {} \; >> ex2.txt
+These files are deleted after removing all links from file.txt
