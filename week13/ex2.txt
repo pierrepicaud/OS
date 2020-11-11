@@ -1,0 +1,9 @@
+There three different approaches for dealing with deadlock: recovery, avoidance, and prevention.
+
+In this prevention, the system will prevent any deadlock condition to happen by making sure that at least one of the four conditions of the deadlock is unmet. Since we are preventing any one of four conditions to happen by applying some techniques. These techniques can be very costly. Therefore, deadlock prevention should be applied in case of the benefit will drastically out weight the cost of implementation. For example, if the system is dealing with highly important data and deadlock happens is severely unfavorable then deadlock prevention is recommended.
+
+
+Recovery has the following advantges: no delays for process initiation (unlike prevention), online deadlock's handling is easy.
+The main disadvantages are preemption losses. The recovery process is done by letting the deadlock happen and then deciding what to do by returning to a checkpoint of the program or simply killing the processes that are deadlocked. This is important for Databases, transactions,... Where one need to roll back.
+
+Avoidance doesn't need preemption at all (as like for prevention). One disadvantage is processes can be blocked for a long time (delays) and future resources requirements should be known by OS (as prevention) this will decrease performance. The main advantage is the lack of implementation, when the system is resiliant agaisnt deadlocks, in simple terms, if turning it on and off will solve the problem, and there is no big rewards for preventing deadlock then why bother?
