@@ -1,8 +1,0 @@
--rw-rw-r-- 1 erklarungsnot erklarungsnot 0 окт 21 10:19 _ex3.txt
--rw-rw-r-- 1 erklarungsnot erklarungsnot 0 окт 21 10:19 _ex3.txt
--rwxrw-rwx 1 erklarungsnot erklarungsnot 0 окт 21 10:19 _ex3.txt
--rwxrwxrwx 1 erklarungsnot erklarungsnot 0 окт 21 10:19 _ex3.txt
-
-660	rw-rw---- Users belonging to my group can change this file, others don't have any access to it at all.
-775	rwxrwxr-x I can do anything; others can only read and execute
-777	rwxrwxrwx anyone can do anything (read, write, or execute)
